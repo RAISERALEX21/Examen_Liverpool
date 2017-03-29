@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/frame_item_container">
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cv_prdoducto_item"
+        card_view:cardBackgroundColor="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_item_producto_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MI PRODUCTO"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_item_producto_ubicacion"
+                        android:hint="Ubicación:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ZONA ROSA"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_item_producto_precio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="$1000.00 mxn"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        />
+
+                <ImageView
+                    android:id="@+id/imv_item_producto_thumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+        <TextView
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"/>
+
+    </LinearLayout>
+
+</FrameLayout>
